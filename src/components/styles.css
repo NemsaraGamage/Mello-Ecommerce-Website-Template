@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial, sans-serif';
+}
+
+/* --------------------- NavBar --------------------- */
+
+.navbar {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-top: 12px;
+    background-color: #FAF9F6;
+}
+
+.navbar .logo {
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #28282B; 
+    margin-right: auto;
+    font-family: 'BonaNovaSC-Regular';
+}
+
+.navbar .nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    position: relative;
+}
+
+.navbar .nav-link, .a {
+    margin: 0 20px; 
+    text-decoration: none;
+    color: #020403; 
+    font-size: 18px;
+    transition: color 0.3s ease, font-weight 0.3s ease; 
+    position: relative;
+    font-family: 'Signika-VariableFont_GRAD';
+    font-weight: 900;
+}
+
+.navbar .nav-link:hover {
+    color: 	#C19A6B;
+    font-weight: bold;
+}
+
+.genre-dropdown {
+    position: relative;
+}
+
+.genre-dropdown:hover .dropdown-menu {
+    display: grid;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: ghostwhite;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Oxygen-Regular';
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar .search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 280px;
+}
+
+/* --------------------- main page --------------------- */
+
+
+
+/* --------------------- footer --------------------- */
+
+.footer {
+    background-color: #004792;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: -10%;
+    margin-top: 80px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 18px;
+  }
+  
+  .social-icons a:hover {
+    color: black; 
+  }
