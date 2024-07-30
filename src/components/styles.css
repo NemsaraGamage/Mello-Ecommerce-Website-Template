@@ -58,7 +58,7 @@
 }
 
 .navbar .nav-link, .navbar2 .nav-link {
-  color: black;
+  color: #333;
   text-decoration: none;
   padding: 10px 15px;
   transition: background 0.3s, color 0.3s;
@@ -72,7 +72,6 @@
 .navbar2 .nav-link {
   font-weight: 500;
   font-size: 14px;
-  color: #080708;
   font-family: 'RobotoMono';
 }
 
@@ -144,6 +143,60 @@
 }
 
 /* --------------------- main page --------------------- */
+
+/* instruments */
+
+.optionCon{
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.optionCon h3{
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-family: 'PlaywriteDKUloopet-Regular';
+  letter-spacing: 4px;
+}
+
+.item-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  text-align: center;
+  width: 150px;
+}
+
+.item-image-container {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.item-image {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.item-name {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  font-family: 'RobotoMono';
+  letter-spacing: 0.2px;
+}
 
 /* --------------------- footer --------------------- */
 
