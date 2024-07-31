@@ -49,7 +49,7 @@ const MainPage = () => {
             <NavBarHead />
 
             <div className="header1">
-                <h1>Welcome to Melo!</h1>
+                <h1>Welcome to Mello!</h1>
                 <p>All Your Musical Desires at One Place.</p>
             </div>
 
