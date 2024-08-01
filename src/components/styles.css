@@ -30,6 +30,11 @@
   src: url(fonts/Teko/Teko-Bold.ttf);
 }
 
+@font-face {
+  font-family: 'Oswald-Regular';
+  src: url(fonts/Oswald/Oswald-Regular.ttf);
+}
+
 /* --------------------- NavBar --------------------- */
 
 
@@ -241,9 +246,9 @@
 
 .banner1{
   width: 100%;
-  max-width: 1061px;
+  max-width: 1100px;
   margin: 0 auto;
-  margin-top: 28px;
+  margin-top: 40px;
 }
 
 .banner1 img{
@@ -255,7 +260,7 @@
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1139px;
   margin-top: 5px;
 }
 
@@ -267,6 +272,88 @@
 .ban2Con img, .ban2com img {
   width: 100%;
   height: auto;
+}
+
+/* carsoule */
+
+.carouselCon {
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 70px;
+  max-width: 1150px;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.carouselCon h3{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Oswald-Regular';
+  letter-spacing: 3px;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: transform 0.3s ease;
+  margin-left: 15px;
+  max-width: 273px;
+  max-height: 600px;
+}
+
+.carousel-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  width: 75%;
+  border-bottom: 3px solid #F0F0F0;
+}
+
+.carousel-item p {
+  margin: 5px 0;
+  color: black;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'PlaywriteDKUloopet-Regular';
+  cursor: pointer;
+}
+
+.carousel-item p:nth-of-type(2) {
+  font-size: 13px;
+  color: #333;
+  margin-top: 7px;
+  font-family: 'RobotoMono';
+  text-decoration: none;
+}
+
+.carousel-item p:nth-of-type(3) {
+  font-size: 13px;
+  color: #333;
+  margin-top: 1px;
+  font-family: 'RobotoMono';
+  text-decoration: none;
+}
+
+.caroPrice-button-container p {
+  margin-right: 10px; 
+  font-family: 'RobotoMono';
+  font-size: 15px;
+  color: #BA0021;
+  font-weight: 600;
+}
+
+/* whats new section  */
+
+.newContentCon{
+  margin-top: 90px;
 }
 
 /* --------------------- footer --------------------- */
@@ -440,5 +527,15 @@
  .header1 p{
    font-size: 17px;
  }
+
+}
+
+@media (max-width: 550px) {
+
+  /* carousel */
+
+  .carousel-item {
+    margin-left: 110px;
+  }
 
 }

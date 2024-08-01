@@ -23,8 +23,10 @@ const NavBar = () => {
       </div>
 
       <div className="navbar2">
-
         <div className="nav-links">
+          <div className="dropdown">
+            <Link to="/" className="nav-link">Category</Link>
+          </div>
           <div className="dropdown">
             <Link to="/" className="nav-link">Guitar</Link>
             <div className="dropdown-content">
