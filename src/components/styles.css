@@ -190,11 +190,19 @@
   margin-top: 80px;
 }
 
+.cataCon{
+  max-width: 1250px;
+}
+
 .optionCon h3{
   font-size: 24px;
   margin-bottom: 25px;
   font-family: 'Edu_AU_VIC_WA_NT_Hand';
   letter-spacing: 4px;
+}
+
+.cataCon h3{
+  font-size: 30px;
 }
 
 .item-grid {
@@ -289,8 +297,8 @@
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
-  font-family: 'Oswald-Regular';
-  letter-spacing: 3px;
+  font-family: 'Edu_AU_VIC_WA_NT_Hand';
+  letter-spacing: 4px;
 }
 
 .carousel-item {
@@ -353,14 +361,27 @@
 /* whats new section  */
 
 .newContentCon{
-  margin-top: 90px;
+  margin-top: 65px;
+}
+
+/* banner4 */
+
+.ban4Con{
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.ban4Con img{
+  width: 100%;
 }
 
 /* --------------------- footer --------------------- */
 
 .footer {
-  background-color: #004792;
-  color: #fff;
+  background-color: #F9F9F9;
+  color: black;
   padding: 20px 0;
   text-align: center;
   margin-bottom: -10%;
@@ -384,10 +405,13 @@
 
 .footer-section h4 {
   margin-bottom: 15px;
+  font-family: 'RobotoMono';
 }
 
 .footer-section p {
   margin: 5px 0;
+  font-family: 'RobotoMono';
+  font-size: 13px;
 }
 
 .social-icons {
@@ -397,12 +421,13 @@
 }
 
 .social-icons a {
-  color: #fff;
+  color: black;
   margin: 0 10px;
   font-size: 20px;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 18px;
+  font-size: 13 px;
+  font-family: 'RobotoMono';
 }
 
 .social-icons a:hover {

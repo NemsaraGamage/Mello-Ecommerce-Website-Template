@@ -23,6 +23,8 @@ import ban1 from '../pics/ban1.jpg';
 import ban1Change from '../pics/ban1Resize.jpg';
 import ban2 from '../pics/ban2.jpg';
 import ban3 from '../pics/ban3.jpg';
+import ban4 from '../pics/ban4.jpg';
+import ban4Change from '../pics/ban4Resize.jpg';
 
 // trending
 import tren1 from '../pics/trending/1.jpg';
@@ -46,6 +48,15 @@ import nwContent7 from '../pics/new/7.jpg';
 import nwContent8 from '../pics/new/8.webp';
 import nwContent9 from '../pics/new/9.webp';
 
+// cata
+import cata1 from '../pics/cata/1.png';
+import cata2 from '../pics/cata/2.png';
+import cata3 from '../pics/cata/3.png';
+import cata4 from '../pics/cata/4.png';
+import cata5 from '../pics/cata/5.jpg';
+import cata6 from '../pics/cata/6.png';
+
+
 const MainPage = () => {
     // ------------------------------- instrument option 
     const items = [
@@ -59,14 +70,28 @@ const MainPage = () => {
         { name: 'DJ Equipment', imgSrc: op8 },
     ];
 
-    // ------------------------------- changing the img when the size is reduced
+    // ------------------------------- Banners resize
+
     // State to manage which banner image to display
-    const [bannerSrc, setBannerSrc] = useState(window.innerWidth <= 790 ? ban1Change : ban1);
+    const [banner1Src, setBanner1Src] = useState(window.innerWidth <= 790 ? ban1Change : ban1);
 
     // Effect to update the banner image on window resize
     useEffect(() => {
         const handleResize = () => {
-            setBannerSrc(window.innerWidth <= 890 ? ban1Change : ban1);
+            setBanner1Src(window.innerWidth <= 890 ? ban1Change : ban1);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    // State to manage which banner image to display
+    const [banner4Src, setBanner4Src] = useState(window.innerWidth <= 790 ? ban4Change : ban4);
+
+    // Effect to update the banner image on window resize
+    useEffect(() => {
+        const handleResize = () => {
+            setBanner4Src(window.innerWidth <= 890 ? ban4Change : ban4);
         };
 
         window.addEventListener('resize', handleResize);
@@ -110,7 +135,7 @@ const MainPage = () => {
         },
     };
 
-    // ------------------------------- whats new sec
+    // ------------------------------- "whats new?" sec
 
     const whatsNew = [
         { trendImg: nwContent1, name: 'Yamaha TRBX304', description: ' Bass Guitar', color:'Mist Green', price: '$422', rating: 3.5 },
@@ -122,6 +147,25 @@ const MainPage = () => {
         { trendImg: nwContent7, name: 'Nord Stage 4', description: 'Stage Keyboard', color: 'Red', price: '$5,399', rating: 5 },
         { trendImg: nwContent8, name: 'Shure SM7B', description: 'Dynamic Vocal Microphone', color: 'Black', price: '$400', rating: 3.5 },
         { trendImg: nwContent9, name: 'Sennheiser e 825-S', description: ' Dynamic Vocal Microphoner', color: 'Black', price: '$76', rating: 5 },
+    ];
+
+    // ------------------------------- instrument option 
+    const cataItems = [
+        { name: 'Guitars', imgSrc: op1 },
+        { name: 'Studio & Recording', imgSrc: op2 },
+        { name: 'Drums', imgSrc: op3 },
+        { name: 'Bass', imgSrc: op4 },
+        { name: 'Keyboards', imgSrc: op5 },
+        { name: 'Live Sound & Lights', imgSrc: op6 },
+        { name: 'Microphones', imgSrc: op7 },
+
+        { name: 'DJ Equipment', imgSrc: op8 },
+        { name: 'Home Audio', imgSrc: cata1 },
+        { name: 'Band & Orchestra', imgSrc: cata2 },
+        { name: 'Classroom Instruments', imgSrc: cata3 },
+        { name: 'Accessories', imgSrc: cata4 },
+        { name: 'Software & Plug-ins', imgSrc: cata5 },
+        { name: 'Lighting', imgSrc: cata6 },
     ];
 
     return (
@@ -150,7 +194,7 @@ const MainPage = () => {
 
             {/* Banner */}
             <div className="banner1">
-                <img src={bannerSrc} alt="banner1" style={{ width: '100%' }} />
+                <img src={banner1Src} alt="banner1" style={{ width: '100%' }} />
             </div>
 
             <div className='banner2'>
@@ -188,6 +232,11 @@ const MainPage = () => {
                     ))}
                 </Carousel>
             </div>
+
+            {/* 4th banner */}
+            <div className='ban4Con'>
+                <img src={banner4Src} style={{ width: '100%' }}></img>
+            </div>
             
             {/* new content Carousel */}
             <div className='carouselCon newContentCon'>
@@ -216,7 +265,22 @@ const MainPage = () => {
                 </Carousel>
             </div>
 
-            {/* <Footer /> */}
+            {/* Catagories */}
+            <div className="optionCon cataCon">
+                <h3>-- Catagories --</h3>
+                <div className="item-grid">
+                    {cataItems.map((item, index) => (
+                        <div key={index} className="item">
+                            <div className="item-image-container cata-image-container">
+                                <img src={item.imgSrc} alt={item.name} className="item-image" />
+                            </div>
+                            <div className="item-name">{item.name}</div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <Footer />
         </>
     );
 };
