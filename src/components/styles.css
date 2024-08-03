@@ -319,27 +319,30 @@
 }
 
 .carousel-item img {
-  width: 75%;
-  border-bottom: 3px solid #F0F0F0;
+  width: 55%;
+  
 }
 
 .carousel-item p {
   margin: 5px 0;
   color: black;
-  font-size: 21px;
+  font-size: 19px;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
   font-family: 'PlaywriteDKUloopet-Regular';
   cursor: pointer;
+  border-bottom: 3px solid #F0F0F0;
 }
 
 .carousel-item p:nth-of-type(2) {
-  font-size: 13px;
+  font-size: 12px;
   color: #333;
   margin-top: 7px;
   font-family: 'RobotoMono';
   text-decoration: none;
+  letter-spacing: 0.7px;
+  border-bottom: none;
 }
 
 .carousel-item p:nth-of-type(3) {
@@ -348,14 +351,16 @@
   margin-top: 1px;
   font-family: 'RobotoMono';
   text-decoration: none;
+  border-bottom: none;
 }
 
 .caroPrice-button-container p {
   margin-right: 10px; 
   font-family: 'RobotoMono';
-  font-size: 15px;
+  font-size: 13px;
   color: #BA0021;
   font-weight: 600;
+  border-bottom: none;
 }
 
 /* whats new section  */
