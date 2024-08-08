@@ -281,6 +281,10 @@
   height: auto;
 }
 
+.banner5{
+  margin-top: 80px;
+}
+
 /* carsoule */
 
 .carouselCon {
@@ -374,6 +378,15 @@
   margin-bottom: 50px;
 }
 
+.guitarCarCon{
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.guitarCarCon img{
+  width: 55%;
+}
+
 .guitarCon {
   display: flex;
   flex-wrap: wrap;
@@ -407,6 +420,7 @@
   font-family: 'PlaywriteDKUloopet-Regular';
   cursor: pointer;
   font-weight: bold;
+  border-bottom: 3px solid #F0F0F0;
 }
 
 .guitarDescription {
@@ -665,6 +679,13 @@
    font-size: 17px;
  }
 
+ /* banner */
+
+ .banner2 {
+  display: inline;
+  width: 80%;
+}
+
 }
 
 @media (max-width: 550px) {
@@ -705,6 +726,17 @@
    
     .header1 p{
       font-size: 17px;
+    }
+
+    /* guitar section */
+
+    .guitarCon{
+      margin-bottom: 90px;
+    }
+
+    /* banners */
+    .banner2 {
+      display: inline;
     }
 
     /* trending carsoul  */

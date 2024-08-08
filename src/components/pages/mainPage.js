@@ -25,6 +25,8 @@ import ban2 from '../pics/ban2.jpg';
 import ban3 from '../pics/ban3.jpg';
 import ban4 from '../pics/ban4.jpg';
 import ban4Change from '../pics/ban4Resize.jpg';
+import ban5 from '../pics/ban5.jpg';
+import ban6 from '../pics/ban6.jpg';
 
 // trending
 import tren1 from '../pics/trending/1.jpg';
@@ -191,6 +193,28 @@ const MainPage = () => {
         { imgSrc: gui7, id: 7, name: 'Ovation Elite',description: 'Acoustic Electric Guitar ', price: '$589.00', },
         { imgSrc: gui8, id: 8, name: 'Breedlove ECO',description: 'Acoustic Electric Guitar ', price: '$799.00', },
     ]
+    
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 432);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 487);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const responsiveGuiSec = {
+        mobile: {
+            breakpoint: { max: 487, min: 0 },
+            items: 1
+        }
+    };
+
 
     return (
         <>
@@ -291,16 +315,43 @@ const MainPage = () => {
 
             {/* guitar section */}
             <h3 className='guitarHead'>-- Guitars --</h3>
-            <div className='guitarCon'>
-                {guitarItems.map(item => (
-                    <div key={item.id} className='guitarItem'>
-                        <img src={item.imgSrc} alt={item.name} className='guitarImg' />
-                        <h3 className='guitarName'>{item.name}</h3>
-                        <p className='guitarDescription'>{item.description}</p>
-                        <p className='guitarPrice'>{item.price}</p>
-                        <a href='#' className='seeMore'>See More</a>
-                    </div>
-                ))}
+            <div className='guitarSection'>
+            
+            {isMobile ? (
+                <Carousel responsive={responsiveGuiSec}>
+                    {guitarItems.map(item => (
+                        <div key={item.id} className='guitarItem guitarCarCon'>
+                            <img src={item.imgSrc} alt={item.name} className='guitarImg' />
+                            <h3 className='guitarName'>{item.name}</h3>
+                            <p className='guitarDescription'>{item.description}</p>
+                            <p className='guitarPrice'>{item.price}</p>
+                            <a href='#' className='seeMore'>See More</a>
+                        </div>
+                    ))}
+                </Carousel>
+            ) : (
+                <div className='guitarCon'>
+                    {guitarItems.map(item => (
+                        <div key={item.id} className='guitarItem'>
+                            <img src={item.imgSrc} alt={item.name} className='guitarImg' />
+                            <h3 className='guitarName'>{item.name}</h3>
+                            <p className='guitarDescription'>{item.description}</p>
+                            <p className='guitarPrice'>{item.price}</p>
+                            <a href='#' className='seeMore'>See More</a>
+                        </div>
+                    ))}
+                </div>
+            )}
+        </div>
+
+            {/* banner5 */}
+            <div className='banner2 banner5'>
+                <div className='ban2Con'>
+                    <img src={ban5}></img>
+                </div>
+                <div className='ban2com'>
+                    <img src={ban6}></img>
+                </div>
             </div>
 
             {/* Catagories */}
