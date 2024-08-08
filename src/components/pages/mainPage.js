@@ -56,6 +56,18 @@ import cata4 from '../pics/cata/4.png';
 import cata5 from '../pics/cata/5.jpg';
 import cata6 from '../pics/cata/6.png';
 
+// contact help
+import musicPeople from '../pics/msuic_ppl.png'
+
+// guitar items
+import gui1 from '../pics/guitars/1.jpg';
+import gui2 from '../pics/guitars/2.webp';
+import gui3 from '../pics/guitars/3.webp';
+import gui4 from '../pics/guitars/4.webp';
+import gui5 from '../pics/guitars/5.webp';
+import gui6 from '../pics/guitars/6.webp';
+import gui7 from '../pics/guitars/7.webp';
+import gui8 from '../pics/guitars/8.webp';
 
 const MainPage = () => {
     // ------------------------------- instrument option 
@@ -168,6 +180,18 @@ const MainPage = () => {
         { name: 'Lighting', imgSrc: cata6 },
     ];
 
+    // guitar section
+    const guitarItems = [
+        { imgSrc: gui6, id: 6, name: 'Takamine GD-37CE',description: 'Acoustic Electric Guitar ', price: '$949.99', },
+        { imgSrc: gui1, id: 1, name: 'Baritone',description: 'Electric Guitar', price: '$829.00', },
+        { imgSrc: gui2, id: 2, name: 'Baritone',description: 'Electric Guitar', price: '$1,199.00', },
+        { imgSrc: gui3, id: 3, name: 'Baritone',description: 'Electric Guitar ', price: '$1,799.00', },
+        { imgSrc: gui4, id: 4, name: 'Jackson Pro Plus',description: 'Electric Guitar ', price: '$1,499.00', },
+        { imgSrc: gui5, id: 5, name: 'D\'Angelico Premier',description: 'Acoustic Electric Guitar ', price: '$249.99', },
+        { imgSrc: gui7, id: 7, name: 'Ovation Elite',description: 'Acoustic Electric Guitar ', price: '$589.00', },
+        { imgSrc: gui8, id: 8, name: 'Breedlove ECO',description: 'Acoustic Electric Guitar ', price: '$799.00', },
+    ]
+
     return (
         <>
             <NavBarHead />
@@ -208,7 +232,7 @@ const MainPage = () => {
 
             {/* Trending Carousel */}
             <div className='carouselCon'>
-                <h3>--- Trending ---</h3>
+                <h3>-- Trending --</h3>
                 <Carousel responsive={responsive}>
                     {trending.map((trend, index) => (
                         <div key={index} className="carousel-item">
@@ -232,15 +256,10 @@ const MainPage = () => {
                     ))}
                 </Carousel>
             </div>
-
-            {/* 4th banner */}
-            <div className='ban4Con'>
-                <img src={banner4Src} style={{ width: '100%' }}></img>
-            </div>
             
             {/* new content Carousel */}
             <div className='carouselCon newContentCon'>
-                <h3>--- Whats New? ---</h3>
+                <h3>-- Whats New? --</h3>
                 <Carousel responsive={responsive}>
                     {whatsNew.map((trend, index) => (
                         <div key={index} className="carousel-item">
@@ -265,6 +284,25 @@ const MainPage = () => {
                 </Carousel>
             </div>
 
+            {/* 4th banner */}
+            <div className='ban4Con'>
+                <img src={banner4Src} style={{ width: '100%' }}></img>
+            </div>
+
+            {/* guitar section */}
+            <h3 className='guitarHead'>-- Guitars --</h3>
+            <div className='guitarCon'>
+                {guitarItems.map(item => (
+                    <div key={item.id} className='guitarItem'>
+                        <img src={item.imgSrc} alt={item.name} className='guitarImg' />
+                        <h3 className='guitarName'>{item.name}</h3>
+                        <p className='guitarDescription'>{item.description}</p>
+                        <p className='guitarPrice'>{item.price}</p>
+                        <a href='#' className='seeMore'>See More</a>
+                    </div>
+                ))}
+            </div>
+
             {/* Catagories */}
             <div className="optionCon cataCon">
                 <h3>-- Catagories --</h3>
@@ -278,6 +316,16 @@ const MainPage = () => {
                         </div>
                     ))}
                 </div>
+            </div>
+
+            {/* Contact help */}
+            <div className='contactHelpCon'>
+                <h3>Need Help Picking an Instrument?</h3>
+                <img src={musicPeople}></img>
+                <p>We understand that choosing the right musical instrument can be overwhelming. 
+                    That's why we're here to help! Our expert team is dedicated to guiding you through 
+                    every step of the process, offering personalized recommendations and in-depth product 
+                    insights tailored to your unique needs.</p>
             </div>
 
             <Footer />

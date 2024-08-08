@@ -37,7 +37,6 @@
 
 /* --------------------- NavBar --------------------- */
 
-
 .navbarCon {
   width: 100%;
   max-width: 1540px;
@@ -197,7 +196,7 @@
 .optionCon h3{
   font-size: 24px;
   margin-bottom: 25px;
-  font-family: 'Edu_AU_VIC_WA_NT_Hand';
+  font-family: 'PlaywriteDKUloopet-Regular';
   letter-spacing: 4px;
 }
 
@@ -215,7 +214,7 @@
 
 .item {
   text-align: center;
-  width: 150px;
+  width: 130px;
 }
 
 .item-image-container {
@@ -297,7 +296,7 @@
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
-  font-family: 'Edu_AU_VIC_WA_NT_Hand';
+  font-family: 'PlaywriteDKUloopet-Regular';
   letter-spacing: 4px;
 }
 
@@ -363,6 +362,87 @@
   border-bottom: none;
 }
 
+/* guitar section */
+
+.guitarHead {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'PlaywriteDKUloopet-Regular';
+  letter-spacing: 4px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.guitarCon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items */
+  gap: 30px; /* Adjust spacing between items */
+  padding: 1px;
+  margin-top: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.guitarItem {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 13px;
+  width: 220px; /* Set a fixed width for consistency */
+  text-align: center;
+}
+
+.guitarImg {
+  max-width: 110px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  margin-top: 5px;
+}
+
+.guitarName {
+  font-size: 1.1em;
+  margin: 4px 0;
+  font-family: 'PlaywriteDKUloopet-Regular';
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.guitarDescription {
+  font-size: 0.8em;
+  color: #555;
+  margin-bottom: 16px;
+  font-family: 'RobotoMono';
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.guitarPrice {
+  font-size: 1.0em;
+  margin-bottom: 12px;
+  font-family: 'RobotoMono';
+  font-weight: bold;
+  color: #BA0021;
+  margin-top: 20px;
+}
+
+.seeMore {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-family: 'RobotoMono';
+  font-size: 0.8em;
+}
+
+.seeMore:hover {
+  background-color: #dcdcdc;
+}
+
 /* whats new section  */
 
 .newContentCon{
@@ -375,11 +455,42 @@
   width: 100%;
   max-width: 920px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 .ban4Con img{
   width: 100%;
+}
+
+/* Contact help sec */
+
+.contactHelpCon{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.contactHelpCon h3{
+  margin-bottom: 35px;
+  font-family: 'PlaywriteDKUloopet-Regular';
+  font-size: 42px;
+  border-bottom: 3px solid #F0F0F0;
+}
+
+.contactHelpCon img{
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.contactHelpCon p{
+  font-family: 'RobotoMono';
+  font-size: 17.5px;
+  color: #333;
+  margin-top: 30px;
 }
 
 /* --------------------- footer --------------------- */
@@ -431,7 +542,7 @@
   font-size: 20px;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 13 px;
+  font-size: 13px;
   font-family: 'RobotoMono';
 }
 
@@ -453,6 +564,14 @@
     margin: 10px 2px;
   }
 
+}
+
+@media (max-width: 796px) {
+  /* contactHelp section */
+  
+  .contactHelpCon h3{
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -514,6 +633,7 @@
 
   .optionCon h3{
     font-size: 25px;
+    margin-top: -10px;
   }
 
   .item-image-container {
@@ -524,25 +644,12 @@
   /* banner1 */
   .banner1{
     max-width: 750px;
+    margin-top: 80px;
   }
   
   .banner1 img{
     width: 100%;
-  }
-
-}
-
-@media (max-width: 660px) {
-
-   /* header 1 */
-
-   .header1 h1{
-    font-size: 60px;
-  }
-
-  .header1 p{
-    font-size: 18px;
-  }
+  }  
 
 }
 
@@ -568,4 +675,54 @@
     margin-left: 110px;
   }
 
+  /* contactHelp section */
+
+  .contactHelpCon{
+  
+    margin-top: -0.5px;
+  }
+
+  .contactHelpCon h3{
+    font-size: 24px;
+  }
+
+  .contactHelpCon img{
+    margin-bottom: 50px;
+  }
+  
+  .contactHelpCon p{
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 432px) {
+    /* header 1 */
+
+    .header1 h1{
+      font-size: 43px;
+    }
+   
+    .header1 p{
+      font-size: 17px;
+    }
+
+    /* trending carsoul  */
+    .carousel-item {
+      margin-left: 71px;
+    }
+
+    /* helpcontent */
+
+    .contactHelpCon{
+      margin-top: 50px;
+    }
+    
+    .contactHelpCon h3{
+      font-size: 30px;
+    }
+
+    .contactHelpCon p{
+      font-size: 20px;
+    }
 }
