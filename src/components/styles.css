@@ -698,6 +698,16 @@
   margin-top: 20px;
 }
 
+/* --------------------- Pagination --------------------- */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
 /* --------------------- responsive --------------------- */
 
 @media (max-width: 890px){

@@ -4,6 +4,9 @@ import MainPage from './components/pages/mainPage'
 import GuitarPage from './components/pages/guitarPage';
 import KeyboardPage from './components/pages/keyboardPage';
 import DrumsPage from './components/pages/drumsPage';
+import Violin from './components/pages/violinPage';
+import FlutePage from './components/pages/flutePage';
+import DjPage from './components/pages/djPage';
 
 function App() {
   return (
@@ -26,8 +29,16 @@ function App() {
 
           {/* Drums Page */}
           <Route path="/DrumsPage" element={<DrumsPage></DrumsPage>} />
-        
-        
+
+          {/* Violin Page */}
+          <Route path="/ViolinPage" element={<Violin></Violin>} />
+
+          {/* Flute Page */}
+          <Route path="/FlutePage" element={<FlutePage></FlutePage>} />
+
+           {/* DJ Page */}
+           <Route path="/DjPage" element={<DjPage></DjPage>} />
+
         </Routes>
     </Router>
     </div>

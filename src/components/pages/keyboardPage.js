@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles.css';
 import NavBarHead from '../NavBar';
 import Footer from '../Footer';
+import Pagination from "../pages/Pagination";
 
 // keyboard items
 import kw1 from '../pics/keyboard/1.webp';
@@ -49,6 +50,9 @@ const keyboardPage = () => {
                 </div>
             ))}
         </div>
+
+        {/* Pagination */}
+        <Pagination/>
 
         <Footer></Footer>
         </>

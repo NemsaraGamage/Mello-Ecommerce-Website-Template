@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles.css';
 import NavBarHead from '../NavBar';
 import Footer from '../Footer';
+import Pagination from "../pages/Pagination";
 
 // guitar items
 import gui1 from '../pics/guitars/1.jpg';
@@ -50,6 +51,10 @@ const guitarPage = () => {
                 </div>
             ))}
         </div>
+
+        {/* Pagination */}
+        <Pagination/>
+
 
         <Footer></Footer>
         </>

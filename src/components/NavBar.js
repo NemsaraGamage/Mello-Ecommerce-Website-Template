@@ -58,23 +58,33 @@ const NavBar = () => {
             </div>
           </div>
           <div className="dropdown">
-            <Link to="/CommunityPage" className="nav-link">Violin</Link>
+            <Link to="/ViolinPage" className="nav-link">Violin</Link>
             <div className="dropdown-content">
-              <Link to="/">Classical Violin</Link>
-              <Link to="/">Electric Violin</Link>
-              <Link to="/">Acoustic Electric</Link>
-              <Link to="/">Fiddle</Link>
-              <Link to="/">Tenor Violin</Link>
+              <Link to="/ViolinPage">Classical Violin</Link>
+              <Link to="/ViolinPage">Electric Violin</Link>
+              <Link to="/ViolinPage">Acoustic Electric</Link>
+              <Link to="/ViolinPage">Fiddle</Link>
+              <Link to="/ViolinPage">Tenor Violin</Link>
             </div>
           </div>
           <div className="dropdown">
-            <Link to="/CommunityPage" className="nav-link">Flute</Link>
+            <Link to="/FlutePage" className="nav-link">Flute</Link>
             <div className="dropdown-content">
-              <Link to="/">Concert Flute</Link>
-              <Link to="/">Piccolo</Link>
-              <Link to="/">Alto Flute</Link>
-              <Link to="/">Bass Flute</Link>
-              <Link to="/">Contrabass Flute</Link>
+              <Link to="/FlutePage">Concert Flute</Link>
+              <Link to="/FlutePage">Piccolo</Link>
+              <Link to="/FlutePage">Alto Flute</Link>
+              <Link to="/FlutePage">Bass Flute</Link>
+              <Link to="/FlutePage">Contrabass Flute</Link>
+            </div>
+          </div>
+          <div className="dropdown">
+            <Link to="/DjPage" className="nav-link">DJ Equipment</Link>
+            <div className="dropdown-content">
+              <Link to="/DjPage">DJ Controllers</Link>
+              <Link to="/DjPage">Turntables</Link>
+              <Link to="/DjPage">CDJs/Media Players</Link>
+              <Link to="/DjPage">Mixers</Link>
+              <Link to="/DjPage">Headphones</Link>
             </div>
           </div>
           <div className="dropdown">
@@ -95,16 +105,6 @@ const NavBar = () => {
               <Link to="/">Bass Clarinet</Link>
               <Link to="/">Alto Clarinet</Link>
               <Link to="/">Contrabass Clarinet</Link>
-            </div>
-          </div>
-          <div className="dropdown">
-            <Link to="/CommunityPage" className="nav-link">DJ Equipment</Link>
-            <div className="dropdown-content">
-              <Link to="/">DJ Controllers</Link>
-              <Link to="/">Turntables</Link>
-              <Link to="/">CDJs/Media Players</Link>
-              <Link to="/">Mixers</Link>
-              <Link to="/">Headphones</Link>
             </div>
           </div>
 

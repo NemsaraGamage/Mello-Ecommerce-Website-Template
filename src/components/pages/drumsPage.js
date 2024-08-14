@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles.css';
 import NavBarHead from '../NavBar';
 import Footer from '../Footer';
+import Pagination from "../pages/Pagination";
 
 // keyboard items
 import dm1 from '../pics/drums/1.webp';
@@ -15,7 +16,7 @@ import dm8 from '../pics/drums/8.webp';
 import dm9 from '../pics/drums/9.webp';
 import dm10 from '../pics/drums/10.webp';
 
-const keyboardPage = () => {
+const drumsPage = () => {
 
     // keyboard section
     const keyboardItems = [
@@ -36,7 +37,7 @@ const keyboardPage = () => {
         <NavBarHead />
 
         {/* keyboards  */}
-        <h1 className='productHead'>Keyboard</h1>
+        <h1 className='productHead'>Drum's</h1>
 
         <div className='productCon'>
             {keyboardItems.map(item => (
@@ -50,9 +51,12 @@ const keyboardPage = () => {
             ))}
         </div>
 
+        {/* Pagination */}
+        <Pagination/>
+
         <Footer></Footer>
         </>
     )
 }
 
-export default keyboardPage;
+export default drumsPage;
