@@ -190,7 +190,7 @@
 }
 
 .cataCon{
-  max-width: 1250px;
+  max-width: 1200px;
 }
 
 .optionCon h3{
@@ -368,7 +368,7 @@
 
 /* guitar section */
 
-.guitarHead {
+.guitarHead, .productHead {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
@@ -387,7 +387,7 @@
   width: 55%;
 }
 
-.guitarCon {
+.guitarCon, .productCon {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Center the items */
@@ -629,6 +629,73 @@
 
 .social-icons a:hover {
   color: black;
+}
+
+/* --------------------- guitar page --------------------- */
+
+.productHead{
+  font-size: 50px;
+}
+
+.productCon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items */
+  gap: 30px; /* Adjust spacing between items */
+  padding: 1px;
+  margin-top: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.productItem {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 13px;
+  width: 220px; /* Set a fixed width for consistency */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.productItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.productImg {
+  max-width: 160px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  margin-top: 5px;
+}
+
+.productName {
+  font-size: 1.1em;
+  margin: 4px 0;
+  font-family: 'PlaywriteDKUloopet-Regular';
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 3px solid #F0F0F0;
+  text-align: center;
+}
+
+.productDescription {
+  font-size: 0.8em;
+  color: #555;
+  margin-bottom: 16px;
+  font-family: 'RobotoMono';
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.productPrice {
+  font-size: 0.8em;
+  margin-bottom: 12px;
+  font-family: 'RobotoMono';
+  font-weight: bold;
+  color: #BA0021;
+  margin-top: 20px;
 }
 
 /* --------------------- responsive --------------------- */

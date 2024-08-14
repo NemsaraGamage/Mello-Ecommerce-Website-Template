@@ -28,33 +28,33 @@ const NavBar = () => {
             <Link to="/" className="nav-link">Category</Link>
           </div>
           <div className="dropdown">
-            <Link to="/" className="nav-link">Guitar</Link>
+            <Link to="/GuitarPage" className="nav-link">Guitar</Link>
             <div className="dropdown-content">
-              <Link to="/">Electric Guitar</Link>
-              <Link to="/">Acoustic Guitar</Link>
-              <Link to="/">Bass Guitar</Link>
-              <Link to="/">Ukuleles</Link>
-              <Link to="/">Classical Guitar</Link>
+              <Link to="/GuitarPage">Electric Guitar</Link>
+              <Link to="/GuitarPage">Acoustic Guitar</Link>
+              <Link to="/GuitarPage">Bass Guitar</Link>
+              <Link to="/GuitarPage">Ukuleles</Link>
+              <Link to="/GuitarPage">Classical Guitar</Link>
             </div>
           </div>
           <div className="dropdown">
-            <Link to="/" className="nav-link">Piano</Link>
+            <Link to="/KeyboardPage" className="nav-link">Keyboard</Link>
             <div className="dropdown-content">
-              <Link to="/">Grand Piano</Link>
-              <Link to="/">Upright Piano</Link>
-              <Link to="/">Digital Piano</Link>
-              <Link to="/">Electronic Keyboard</Link>
-              <Link to="/">Workstation Keyboard</Link>
+              <Link to="/KeyboardPage">Grand Piano</Link>
+              <Link to="/KeyboardPage">Upright Piano</Link>
+              <Link to="/KeyboardPage">Digital Piano</Link>
+              <Link to="/KeyboardPage">Electronic Keyboard</Link>
+              <Link to="/KeyboardPage">Workstation Keyboard</Link>
             </div>
           </div>
           <div className="dropdown">
-            <Link to="/CommunityPage" className="nav-link">Drums</Link>
+            <Link to="/DrumsPage" className="nav-link">Drums</Link>
             <div className="dropdown-content">
-              <Link to="/">Acoustic Drums</Link>
-              <Link to="/">Electronic Drums</Link>
-              <Link to="/">Drum Accessories</Link>
-              <Link to="/">Marching Drums</Link>
-              <Link to="/">Frame Drums</Link>
+              <Link to="/DrumsPage">Acoustic Drums</Link>
+              <Link to="/DrumsPage">Electronic Drums</Link>
+              <Link to="/DrumsPage">Drum Accessories</Link>
+              <Link to="/DrumsPage">Marching Drums</Link>
+              <Link to="/DrumsPage">Frame Drums</Link>
             </div>
           </div>
           <div className="dropdown">
