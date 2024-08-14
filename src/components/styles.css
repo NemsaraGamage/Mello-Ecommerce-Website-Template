@@ -308,7 +308,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-top: 30px;
   transition: transform 0.3s ease;
   margin-left: 15px;
@@ -323,7 +323,7 @@
 
 .carousel-item img {
   width: 55%;
-  
+  margin-top: 5px;
 }
 
 .carousel-item p {
@@ -404,6 +404,12 @@
   padding: 13px;
   width: 220px; /* Set a fixed width for consistency */
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.guitarItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .guitarImg {
@@ -421,6 +427,7 @@
   cursor: pointer;
   font-weight: bold;
   border-bottom: 3px solid #F0F0F0;
+  text-align: center;
 }
 
 .guitarDescription {
@@ -429,11 +436,11 @@
   margin-bottom: 16px;
   font-family: 'RobotoMono';
   font-weight: bold;
-  margin-top: 8px;
+  margin-top: 15px;
 }
 
 .guitarPrice {
-  font-size: 1.0em;
+  font-size: 0.8em;
   margin-bottom: 12px;
   font-family: 'RobotoMono';
   font-weight: bold;
@@ -505,6 +512,66 @@
   font-size: 17.5px;
   color: #333;
   margin-top: 30px;
+}
+
+/* ------- Newsletter -------- */
+
+.newsCon {
+  max-width: 1520px;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #9D9D9D;
+  border-bottom: 1px solid #9D9D9D;
+}
+
+.newsCon h3 {
+  font-family: 'PTSansNarrow-Bold', sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.newsCon p {
+  font-family: LXGWWenKaiTC-Bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.newsCon .newsletterForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsCon .newsletterForm input[type="email"] {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.newsCon .newsletterForm button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: PTSansNarrow-Bold;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
+}
+
+.newsCon .newsletterForm button:hover {
+  border: 1px solid #F0F0F0;
+  transform: scale(1.05); /* Slightly enlarge the button */
 }
 
 /* --------------------- footer --------------------- */
@@ -757,4 +824,43 @@
     .contactHelpCon p{
       font-size: 20px;
     }
+}
+
+@media (max-width: 413px) {
+
+  /* trending and whats new section Carousel */
+  .carousel-item {
+    margin-left: 62px;
+  }
+
+  /* guitar sec */
+  .guitarCarCon{
+    width: 273px;
+  }
+
+  /* newsletter */
+  .newsCon h3 {
+    font-size: 25px;
+  }
+  
+  .newsCon p {
+    font-size: 17px;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 391px) {
+
+  /* trending and whats new section Carousel */
+  .carousel-item {
+    margin-left: 49px;
+  }
+}
+
+@media (max-width: 361px) {
+
+  /* trending and whats new section Carousel */
+  .carousel-item {
+    margin-left: 36px;
+  }
 }

@@ -315,34 +315,33 @@ const MainPage = () => {
 
             {/* guitar section */}
             <h3 className='guitarHead'>-- Guitars --</h3>
-            <div className='guitarSection'>
-            
-            {isMobile ? (
-                <Carousel responsive={responsiveGuiSec}>
-                    {guitarItems.map(item => (
-                        <div key={item.id} className='guitarItem guitarCarCon'>
-                            <img src={item.imgSrc} alt={item.name} className='guitarImg' />
-                            <h3 className='guitarName'>{item.name}</h3>
-                            <p className='guitarDescription'>{item.description}</p>
-                            <p className='guitarPrice'>{item.price}</p>
-                            <a href='#' className='seeMore'>See More</a>
-                        </div>
-                    ))}
-                </Carousel>
-            ) : (
-                <div className='guitarCon'>
-                    {guitarItems.map(item => (
-                        <div key={item.id} className='guitarItem'>
-                            <img src={item.imgSrc} alt={item.name} className='guitarImg' />
-                            <h3 className='guitarName'>{item.name}</h3>
-                            <p className='guitarDescription'>{item.description}</p>
-                            <p className='guitarPrice'>{item.price}</p>
-                            <a href='#' className='seeMore'>See More</a>
-                        </div>
-                    ))}
-                </div>
-            )}
-        </div>
+            <div className='guitarSection'>  
+                {isMobile ? (
+                    <Carousel responsive={responsiveGuiSec}>
+                        {guitarItems.map(item => (
+                            <div key={item.id} className='guitarItem guitarCarCon'>
+                                <img src={item.imgSrc} alt={item.name} className='guitarImg' />
+                                <h3 className='guitarName'>{item.name}</h3>
+                                <p className='guitarDescription'>{item.description}</p>
+                                <p className='guitarPrice'>{item.price}</p>
+                                <a href='#' className='seeMore'>See More</a>
+                            </div>
+                        ))}
+                    </Carousel>
+                ) : (
+                    <div className='guitarCon'>
+                        {guitarItems.map(item => (
+                            <div key={item.id} className='guitarItem'>
+                                <img src={item.imgSrc} alt={item.name} className='guitarImg' />
+                                <h3 className='guitarName'>{item.name}</h3>
+                                <p className='guitarDescription'>{item.description}</p>
+                                <p className='guitarPrice'>{item.price}</p>
+                                <a href='#' className='seeMore'>See More</a>
+                            </div>
+                        ))}
+                    </div>
+                )}
+            </div>
 
             {/* banner5 */}
             <div className='banner2 banner5'>
@@ -377,6 +376,16 @@ const MainPage = () => {
                     That's why we're here to help! Our expert team is dedicated to guiding you through 
                     every step of the process, offering personalized recommendations and in-depth product 
                     insights tailored to your unique needs.</p>
+            </div>
+
+            {/* Newsletter */}
+            <div className="newsCon">
+              <h3>Join Our Newsletter!</h3>
+              <p>Subscribe to our newsletter to stay updated on the latest news and offers!</p>
+              <form className="newsletterForm">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+              </form>
             </div>
 
             <Footer />
