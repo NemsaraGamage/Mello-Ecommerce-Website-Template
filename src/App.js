@@ -10,7 +10,7 @@ function App() {
         <Routes>
           {/* Mainpage routes */}
           <Route index element={<MainPage />} />
-          <Route path='/PirateMob-Ecommerce-Website-Template/' element={<MainPage />} />
+          <Route path='/Mello-Ecommerce-Website-Template/' element={<MainPage />} />
 
           {/* Main Page */}
           <Route path="/MainPage" element={<MainPage></MainPage>} />
