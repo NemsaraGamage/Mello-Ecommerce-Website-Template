@@ -71,6 +71,9 @@ import gui6 from '../pics/guitars/6.webp';
 import gui7 from '../pics/guitars/7.webp';
 import gui8 from '../pics/guitars/8.webp';
 
+// npm i gh-pages --save-dev
+// npm run build
+
 const MainPage = () => {
     // ------------------------------- instrument option 
     const items = [
