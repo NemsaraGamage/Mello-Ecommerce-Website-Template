@@ -634,7 +634,8 @@
 /* --------------------- guitar page --------------------- */
 
 .productHead{
-  font-size: 50px;
+  font-size: 47px;
+  margin-top: 30px;
 }
 
 .productCon {
@@ -695,7 +696,7 @@
   font-family: 'RobotoMono';
   font-weight: bold;
   color: #BA0021;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 /* --------------------- Pagination --------------------- */

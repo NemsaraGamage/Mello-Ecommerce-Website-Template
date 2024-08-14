@@ -88,23 +88,23 @@ const NavBar = () => {
             </div>
           </div>
           <div className="dropdown">
-            <Link to="/CommunityPage" className="nav-link">Saxophone</Link>
+            <Link to="/saxPage" className="nav-link">Saxophone</Link>
             <div className="dropdown-content">
-              <Link to="/">Soprano Saxophone</Link>
-              <Link to="/">Alto Saxophone</Link>
-              <Link to="/">Tenor Saxophone</Link>
-              <Link to="/">Baritone Saxophone</Link>
-              <Link to="/">Bass Saxophone</Link>
+              <Link to="/saxPage">Soprano Saxophone</Link>
+              <Link to="/saxPage">Alto Saxophone</Link>
+              <Link to="/saxPage">Tenor Saxophone</Link>
+              <Link to="/saxPage">Baritone Saxophone</Link>
+              <Link to="/saxPage">Bass Saxophone</Link>
             </div>
           </div>
           <div className="dropdown">
-            <Link to="/CommunityPage" className="nav-link">Clarinet</Link>
+            <Link to="/clarinetPage" className="nav-link">Clarinet</Link>
             <div className="dropdown-content">
-              <Link to="/">B♭ Soprano Clarinet</Link>
-              <Link to="/">A Clarinet</Link>
-              <Link to="/">Bass Clarinet</Link>
-              <Link to="/">Alto Clarinet</Link>
-              <Link to="/">Contrabass Clarinet</Link>
+              <Link to="/clarinetPage">B♭ Soprano Clarinet</Link>
+              <Link to="/clarinetPage">A Clarinet</Link>
+              <Link to="/clarinetPage">Bass Clarinet</Link>
+              <Link to="/clarinetPage">Alto Clarinet</Link>
+              <Link to="/clarinetPage">Contrabass Clarinet</Link>
             </div>
           </div>
 
